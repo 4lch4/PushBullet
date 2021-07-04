@@ -1,0 +1,24 @@
+Now:
+	☐ Write classes for each group of endpoints.
+		☐ Channel
+		☐ Chat
+		☐ Device
+		☐ Ephemerals
+		☐ Push
+		☐ Subscriptions
+		☐ Text
+		☐ Upload
+		☐ User
+	☐ Write tests for the lib files.
+	☐ Write tests for the endpoint classes.
+
+Next:
+	☐ Configure GitHub Actions for automatic builds and tests.
+	☐ Configure GitHub Actions for automatic publish of lib and GH releases.
+	☐ Add support for OAuth.
+
+Future:
+	☐ Publish to NPM.
+
+Maybe:
+	☐ I 'unno.

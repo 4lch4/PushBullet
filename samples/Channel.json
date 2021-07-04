@@ -1,0 +1,18 @@
+{
+  "description": "News about Elon Musk",
+  "image_url": "https://dl.pushbulletusercontent.com/StzRmwdkIe8gluBH3XoJ9HjRzqjlUYSf4/musk.jpg",
+  "name": "Elon Musk News",
+  "tag": "elonmusknews",
+  "website_url": "https://twitter.com/elonmusk",
+  "feed_url": "http://blog.humblebundle.com/rss",
+  "subscribe": true,
+  "feed_filters": [
+    {
+      "field": "title",
+      "operator": "contains",
+      "value": "humble indie bundle",
+      "not": false,
+      "ignore_case": true
+    }
+  ]
+}
