@@ -1,4 +1,4 @@
-import axios, { AxiosInstance, Method } from 'axios'
+import axios, { AxiosInstance, AxiosResponse, Method } from 'axios'
 import { APIConfig } from '../interfaces/APIConfig'
 
 export abstract class BaseEndpoint {
@@ -14,7 +14,11 @@ export abstract class BaseEndpoint {
     })
   }
 
-  async performRequest(method: Method, endpoint: string, data?: any) {
+  async performRequest(
+    method: Method,
+    endpoint: string,
+    data?: any
+  ): Promise<AxiosResponse<any>> {
     try {
       return this.client.request({ method, url: endpoint, data })
     } catch (err) {

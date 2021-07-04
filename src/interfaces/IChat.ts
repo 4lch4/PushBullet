@@ -1,4 +1,4 @@
-interface IChat {
+export interface IChat {
   active: boolean;
   created: number;
   iden: string;
@@ -6,7 +6,7 @@ interface IChat {
   with: With;
 }
 
-interface With {
+export interface With {
   email: string;
   email_normalized: string;
   iden: string;

@@ -1,1 +1,5 @@
 export * from './APIConfig'
+export * from './IChannel'
+export * from './IChat'
+export * from './ISubscription'
+export * from './RequestOptions'
