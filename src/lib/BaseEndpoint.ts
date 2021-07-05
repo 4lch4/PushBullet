@@ -1,5 +1,5 @@
+import { APIConfig } from '@interfaces/index'
 import axios, { AxiosInstance, AxiosResponse, Method } from 'axios'
-import { APIConfig } from '../interfaces/APIConfig'
 
 export abstract class BaseEndpoint {
   private client: AxiosInstance

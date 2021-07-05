@@ -1,5 +1,5 @@
-import { IChannel } from '../interfaces/IChannel'
-import { BaseEndpoint } from '../lib'
+import { IChannel } from '@interfaces/index'
+import { BaseEndpoint } from '@lib/BaseEndpoint'
 
 export class ChannelEndpoint extends BaseEndpoint {
   async createChannel(channel: IChannel) {

@@ -1,4 +1,4 @@
-import { BaseEndpoint } from '../lib'
+import { BaseEndpoint } from '@lib/index'
 
 export class UserEndpoint extends BaseEndpoint {
   async getUser() {

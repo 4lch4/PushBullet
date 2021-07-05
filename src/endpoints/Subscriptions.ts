@@ -1,5 +1,5 @@
-import { IChannelInfo, ISubscription } from '../interfaces'
-import { BaseEndpoint } from '../lib'
+import { IChannelInfo, ISubscription } from '@interfaces/index'
+import { BaseEndpoint } from '@lib/index'
 
 export class SubscriptionsEndpoint extends BaseEndpoint {
   async listSubscriptions(): Promise<ISubscription[]> {

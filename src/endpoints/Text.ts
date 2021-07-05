@@ -1,5 +1,5 @@
-import { IText, IText_NEW } from '../interfaces'
-import { BaseEndpoint } from '../lib'
+import { IText, IText_NEW } from '@interfaces/index'
+import { BaseEndpoint } from '@lib/index'
 
 export class TextEndpoint extends BaseEndpoint{
   async createText(textData: IText_NEW, file_url: string, skip_delete_file = true): Promise<IText>{
