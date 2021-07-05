@@ -14,7 +14,7 @@ export abstract class BaseEndpoint {
     })
   }
 
-  async performRequest(
+  protected async performRequest(
     method: Method,
     endpoint: string,
     data?: any
