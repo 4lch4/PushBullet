@@ -1,6 +1,6 @@
 {
   "name": "@4lch4/pblib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Node.js library written in TypeScript for the sole purpose of interacting with the PushBullet API.",
   "main": "dist/index.js",
   "repository": "git@github.com:4lch4/pblib.git",
