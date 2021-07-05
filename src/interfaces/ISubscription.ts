@@ -1,4 +1,5 @@
 import { IChannel } from './IChannel'
+import { IPush } from './IPush'
 
 export interface ISubscription {
   /** Unique identifier for this {@link ISubscription}. */
@@ -20,4 +21,29 @@ export interface ISubscription {
 
   /** Information about the {@link Channel} that is being subscribed to. */
   channel: IChannel
+}
+
+export interface IChannelInfo {
+  /** Unique identifier for the channel. */
+  iden: string
+
+  /** The name of the channel. */
+  name: string
+
+  /** The description of the channel. */
+  description: string
+
+  /** Image to display for the channel. */
+  image_url: string
+
+  /** Number of subscribers to the channel. */
+  subscriber_count: number
+
+  /**
+   * Globally unique identifier for the channel, chosen by the channel creator.
+   */
+  tag: string
+
+  /** Array of recent {@link IPush} objects sent to the channel. */
+  recent_pushes: IPush[]
 }
