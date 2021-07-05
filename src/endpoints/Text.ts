@@ -1,5 +1,5 @@
-import { IText, IText_NEW } from '@interfaces/index'
-import { BaseEndpoint } from '@lib/index'
+import { IText, IText_NEW } from '../interfaces'
+import { BaseEndpoint } from '../lib'
 
 export class TextEndpoint extends BaseEndpoint {
   async createText(

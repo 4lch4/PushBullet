@@ -1,5 +1,5 @@
-import { IChat } from '@interfaces/index'
-import { BaseEndpoint } from '@lib/index'
+import { BaseEndpoint } from '../lib'
+import { IChat } from '../interfaces'
 
 export class ChatEndpoint extends BaseEndpoint {
   async listChats(): Promise<IChat[]> {

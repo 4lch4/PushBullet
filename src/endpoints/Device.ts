@@ -1,5 +1,5 @@
-import { IDevice, IDevice_NEW, IDevice_UPD } from '@interfaces/index'
-import { BaseEndpoint } from '@lib/index'
+import { IDevice, IDevice_NEW, IDevice_UPD } from '../interfaces'
+import { BaseEndpoint } from '../lib'
 
 export class DeviceEndpoint extends BaseEndpoint {
   async listDevices(): Promise<IDevice[]> {

@@ -1,5 +1,5 @@
-import { IUpload, IUpload_RES } from '@interfaces/index'
-import { BaseEndpoint } from '@lib/index'
+import { IUpload, IUpload_RES } from '../interfaces'
+import { BaseEndpoint } from '../lib'
 
 export class UploadEndpoint extends BaseEndpoint {
   async uploadRequest(upload: IUpload): Promise<IUpload_RES> {

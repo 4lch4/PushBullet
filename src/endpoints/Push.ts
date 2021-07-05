@@ -1,5 +1,5 @@
-import { IListPushesOptions, IPush, IPush_NEW } from '@interfaces/index'
-import { BaseEndpoint } from '@lib/index'
+import { IListPushesOptions, IPush, IPush_NEW } from '../interfaces'
+import { BaseEndpoint } from '../lib'
 
 export class PushEndpoint extends BaseEndpoint {
   async listPushes(opts?: IListPushesOptions): Promise<IPush> {

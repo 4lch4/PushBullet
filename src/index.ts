@@ -1,6 +1,3 @@
-require('tsconfig-paths')
-// import { loadConfig } from 'tsconfig-paths'
-import { APIConfig } from '@interfaces/APIConfig'
 import {
   ChannelEndpoint,
   ChatEndpoint,
@@ -11,7 +8,7 @@ import {
   UploadEndpoint,
   UserEndpoint
 } from './endpoints'
-// loadConfig()
+import { APIConfig } from './interfaces'
 
 export class PBLib {
   private config: APIConfig
