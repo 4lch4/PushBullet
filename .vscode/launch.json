@@ -9,12 +9,7 @@
       "request": "launch",
       "name": "Mocha Tests",
       "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-      "args": [
-        "--timeout",
-        "999999",
-        "--colors",
-        "${workspaceRoot}/test"
-      ],
+      "args": ["--timeout", "999999", "--colors", "${workspaceRoot}/test"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "protocol": "auto"

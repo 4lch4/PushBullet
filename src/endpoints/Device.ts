@@ -7,7 +7,9 @@ export class DeviceEndpoint extends BaseEndpoint {
       const { data } = await this.performRequest('GET', '/devices')
 
       return data.devices
-    } catch (err) { return err }
+    } catch (err) {
+      return err
+    }
   }
 
   async createDevice(device: IDevice_NEW): Promise<IDevice> {
@@ -15,7 +17,9 @@ export class DeviceEndpoint extends BaseEndpoint {
       const { data } = await this.performRequest('POST', '/devices', device)
 
       return data
-    } catch (err) { return err }
+    } catch (err) {
+      return err
+    }
   }
 
   async updateDevice(device: IDevice_UPD): Promise<IDevice> {
@@ -23,7 +27,9 @@ export class DeviceEndpoint extends BaseEndpoint {
       const { data } = await this.performRequest('POST', '/devices', device)
 
       return data
-    } catch (err) { return err }
+    } catch (err) {
+      return err
+    }
   }
 
   async deleteDevice(id: string): Promise<{}> {
@@ -31,6 +37,8 @@ export class DeviceEndpoint extends BaseEndpoint {
       const { data } = await this.performRequest('DELETE', `/devices/${id}`)
 
       return data
-    } catch (err) { return err }
+    } catch (err) {
+      return err
+    }
   }
 }

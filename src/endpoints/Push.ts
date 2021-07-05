@@ -39,7 +39,9 @@ export class PushEndpoint extends BaseEndpoint {
       const { data } = await this.performRequest('DELETE', `/pushes/${id}`)
 
       return data
-    } catch (err) { return err }
+    } catch (err) {
+      return err
+    }
   }
 
   async deleteAllPushes(): Promise<{}> {
@@ -47,6 +49,8 @@ export class PushEndpoint extends BaseEndpoint {
       const { data } = await this.performRequest('DELETE', '/pushes')
 
       return data
-    } catch (err) { return err }
+    } catch (err) {
+      return err
+    }
   }
 }
